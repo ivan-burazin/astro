@@ -4,15 +4,8 @@
     "dockerfile": "Dockerfile"
   },
   
-  "remoteUser": "astro",
+  "remoteUser": "root",
   
-  "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {},
-    "ghcr.io/devcontainers/features/common-utils:1": {
-      "username": "astro"
-    }
-  },
-
   "postCreateCommand": "pnpm install && pnpm run build",
 
   "waitFor": "postCreateCommand",
